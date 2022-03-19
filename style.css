@@ -56,11 +56,45 @@
 
   /* section4 */
   .section4{
-    padding-top: 50px;
+    padding-top: 5px;
     color: black;
   }
   .section4{
       background-image: url(image/section2.jpg);
+      width: 100%;
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  /* section 5 */
+  .section5 {
+      width: 100%;
+      height: 100vh;
+    position: relative;
+    top: 50px;
+    left: 90px;
+  }
+  .image1 {
+    position: relative;
+    top: -130px;
+    left: 150px;
+    border: 1px red solid;
+  }
+  .image2 {
+    position: absolute;
+    top: 40px;
+    left: 400px;
+    border: 1px green solid;
+  }
+
+  /* footer  */
+  .containers{
+    color: #fff;
+    padding-top: 225px;
+  }
+  .containers{
+      background-image: url(image/pizzamwitu-bg.jpg);
       width: 100%;
       height: 100vh;
       background-repeat: no-repeat;
