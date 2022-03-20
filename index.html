@@ -77,10 +77,45 @@
                 <input id="pizza-veggie" name="pizza-type" type="radio" value="veggie">
                 <label for="pizza-veggie"><strong>Roast Veg & Feta.</strong></label>
               </div>
+              <div>
+                <input id="type-custom" name="pizza-type" type="radio" value="custom" checked>
+                <label for="type-custom"><strong>Chicken Macon BBQ.</strong></label>
+              </div>
 
-              <input id="type-custom" name="pizza-type" type="radio" value="custom" checked>
-    <label for="type-custom"><strong>Custom</strong>Chicken Macon BBQ.</label>
+              <h2>CRUST</h2>
+                <!-- toppings -->
+  <div>
+    <input id="topping-cheese" name="cheese" type="checkbox" value="cheese" checked>
+    <label for="topping-cheese"><strong>Cripsy</strong></label>
+
+    <label class="visuallyhidden" for="topping-cheese-location">Cripsy location</label>
+    <select id="topping-cheese-location" name="cheese-location">
+      <option value="all" selected>All over</option>
+      <option value="left">Left side</option>
+      <option value="right">Right side</option>
+  </select>
   </div>
+
+  <div>
+    <input id="topping-pepperoni" name="topping" type="checkbox" value="pepperoni">
+    <label for="topping-pepperoni"><strong>Stuffed</strong></label>
+    <!-- for a cleaner experience, we'd only add the <select> when the checkbox is checked -->
+  </div>
+
+  <div>
+    <input id="topping-beef" name="topping" type="checkbox" value="beef" checked>
+    <label for="topping-beef"><strong>Gluten-free</strong></label>
+
+    <label class="visuallyhidden" for="topping-beef-location">Gluten location</label>
+    <select id="topping-beef-location" name="beef-location">
+      <option value="all">All over</option>
+      <option value="left" selected>Left side</option>
+      <option value="right">Right side</option>
+    </select>
+  </div>
+
+              
+
             </form>
         </div>    
     </div>
