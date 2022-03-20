@@ -98,29 +98,8 @@
   /* review  */
   .reviews{
     background-color: #04AA6D;
-    height: 75vh;
+    height: 100vh;
     width: 100%;
-  }
-
-  /* section 5 */
-  .section5 {
-      width: 100%;
-      height: 100vh;
-    position: relative;
-    top: 50px;
-    left: 90px;
-  }
-
-  .image1 {
-    position: relative;
-    top: -130px;
-    left: 150px;
-  }
-  .image2 {
-    position: absolute;
-    top: 40px;
-    left: 400px;
-    border: 1px green solid;
   }
 
   /* footer  */
@@ -137,6 +116,42 @@
       height: 50vh;
       background-repeat: no-repeat;
       background-size: cover;
-      padding-top: 80px;
+      padding-top: 170px;
       padding-left: 60px;
+  }
+
+
+  /* form syling */
+  .visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+  }
+  
+  /* nothing to see here */
+  
+  body {
+    margin: 2em;
+    border: 0;
+  }
+  
+  h2 {
+    text-align: left;
+  }
+  
+  input[type="checkbox"] {
+    margin: 0 0 1.5em 0;
+  }
+  
+  select {
+    margin: 0 0 0.5em 0.5em;
+  }
+  
+  .textarea {
+    margin: 0 0 1em 0;
   }

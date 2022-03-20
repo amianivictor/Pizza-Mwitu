@@ -114,7 +114,42 @@
     </select>
   </div>
 
-              
+             <h2>Make Your Order</h2>
+             <!-- size -->
+  <div>
+    <label for="pizza-size"><strong>Size</strong></label>
+    <select id="pizza-size" name="pizza-size">
+      <option value="s">Small</option>
+      <option value="m">Medium</option>
+      <option value="l" selected>Large</option>
+      <option value="xl">Extra large</option>
+    </select>
+  </div>
+
+  <div>
+
+    <div>
+      <label for="pizza-qty"><strong>Quantity</strong></label>
+      <select id="pizza-qty" name="pizza-qty">
+        <option value="1" selected>1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+      </select>
+    </div>
+    <div>
+      
+    <div class="textarea">
+      <label for="notes"><strong>Notes</strong></label>
+      <textarea id="notes"></textarea>
+    </div>
+  
+      <a href="#add-another"><span aria-hidden="true">+</span> Add another pizza</a>
+  
+    <a href="payment.html" class="button">Head to payment</a>
+  </form>
 
             </form>
         </div>    
