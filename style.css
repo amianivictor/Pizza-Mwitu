@@ -2,6 +2,35 @@
     padding: 0;
     margin: 0;
 }
+
+.section1a ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.section1a li {
+  float: left;
+}
+
+.section1a li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.section1a li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.section1a .active {
+  background-color: #04AA6D;
+}
+
 /* section1  */
 .section1{
     color: #fff;
@@ -13,6 +42,11 @@
       height: 100vh;
       background-repeat: no-repeat;
       background-size: cover;
+  }
+  .container h4{
+      text-align: center;
+      align-items: flex-start;
+      padding-bottom: -50%;
   }
   
 .nav-item{
@@ -75,11 +109,11 @@
     top: 50px;
     left: 90px;
   }
+
   .image1 {
     position: relative;
     top: -130px;
     left: 150px;
-    border: 1px red solid;
   }
   .image2 {
     position: absolute;
@@ -93,10 +127,15 @@
     color: #fff;
     padding-top: 225px;
   }
+  .reviews h2{
+    align-items: center;
+  }
   .containers{
       background-image: url(image/pizzamwitu-bg.jpg);
       width: 100%;
-      height: 100vh;
+      height: 50vh;
       background-repeat: no-repeat;
       background-size: cover;
+      padding-top: 80px;
+      padding-left: 60px;
   }
