@@ -26,7 +26,7 @@
         </ul>
           <div class="section1">            
           
-                <h1>Try Not To Get Too <span class="one">Attached</span></h1>
+                <h1 class="headers">Try Not To Get Too <span class="one">Attached</span></h1>
                 <h5></h5>
           </div>
         </div>
@@ -38,123 +38,220 @@
     <div class="container">
         <div class="section2">
             <h2 class="ak">Welcome To Our <br> Pizza Mwitu</h2>
-            <p class="akb"><strong>FREEDOM'S TASTY, COME AND TAKE A BITE OUT OF IT PURE, UNADULTERATED,<br> DONT-TELL-ME-WHAT-TO-DO-FREEDOM. THE KIND THAT <br>MAKES YOU FEEL. WELL... FREE. SO GRAB YOUR <br>TASTE BUDDIES - LET'S HUSTLE.</strong></p>
+            <p class="akb"><strong>FREEDOM'S TASTY, COME AND TAKE A BITE OUT OF IT PURE, UNADULTERATED,<br> DONT-TELL-ME-WHAT-TO-DO-FREEDOM. THE KIND THAT MAKES YOU FEEL. <br>WELL... FREE. SO GRAB YOUR TASTE BUDDIES - LET'S HUSTLE.</strong></p>
             <div class="container">
                 <img src="image/pizza sizes.webp" alt="" width="100%">
               </div>
               <div class="row">
-                <div class="col"><strong>00000-----Small 600ksh/=</strong></div>
-                <div class="col"><strong>Medium 900ksh/=</strong></div>
-                <div class="col"><strong> Large 1200ksh/=</strong></div>
-                <div class="col"><strong> Extra Large 1500ksh/=</strong></div>
+                <div class="col" class="price"><strong>Small 600ksh/=</strong></div>
+                <div class="col" class="price"><strong>Medium 900ksh/=</strong></div>
+                <div class="col" class="price"><strong>Large 1200ksh/=</strong></div>
+                <div class="col" class="price"><strong>Extra Large 1500ksh/=</strong></div>
               </div>
         </div>    
       </div>
 
-    <!-- Reviews  -->
-    <div class="container">
-        <div class="reviews">
-            <h2>ORDER HERE</h2>
-            <form>
-              <!-- pizza type -->
-              <h2>Pizza type</h2>
-              <div>
-                <input id="pizza-margarita" name="pizza-type" type="radio" value="margarita">
-                <label for="pizza-margarita"><strong>Chicken Hawaiian.</strong></label>
+
+       <!--Controls-->
+  <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <!--/.Controls-->
+</div>
+</div>
+<!-- order form -->
+
+<div class="container-fluid order" id="make-order">
+  <div class="order-overlay">
+    <div class="controls-top text-center" id="Order-now"> 
+      <h2>Place your order</h2>
+    </div>    
+    <div class="row">
+        <div class="col-sm-5">
+          <form action="">
+              <label for="select">Select Preffered flavour</label>
+              <select class="browser-default custom-select custom-select-md mb-3 name">                
+                <option value="Chicken Tikka">Chicken Tikka</option>
+                <option value="PeriPeri Pizza">PeriPeri Pizza</option>
+                <option value="Raspberry Dessert Pizza">Raspberry Dessert Pizza</option>
+                <option value="Chicken Alfredo Pizza">Chicken Alfredo Pizza</option>
+                <option value="Sunchoke Pizza">Sunchoke Pizza</option>
+                <option value="Buffalo Chicken Sticks">Buffalo Chicken Sticks</option>
+              </select>
+            <label for="select">Select Size</label>
+            <select class="browser-default custom-select custom-select-md mb-3" id="size">
+              <option selected value="0">Select size here</option>
+              <option value="large">Large -- sh. 1200</option>
+              <option value="medium">Medium -- sh. 850</option>
+              <option value="small">Small -- sh. 600</option>
+            </select>
+            <label for="crust">Choose your favorite Crust!</label>
+              <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+                  <option selected value="0">Select your preferred crust!</option>
+                <option value="Crispy">Crispy -- sh. 200</option>
+                <option value="Stuffed">Stuffed -- sh. 150</option>
+                <option value="Gluten-free">Gluten-free-- sh. 180</option>
+              </select>
+            <label for="Toppings">Select Your Toppings at sh. 50 each</label><br>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
+                <label class="custom-control-label" for="Sausage">Sausage</label>
               </div>
-
-              <div>
-                <input id="pizza-mushroom" name="pizza-type" type="radio" value="mushroom">
-                <label for="pizza-mushroom"><strong>Meat Deluxe.</strong></label>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
+                <label class="custom-control-label" for="Bacon">Bacon</label>
               </div>
-
-              <div>
-                <input id="pizza-sausage" name="pizza-type" type="radio" value="sausage">
-                <label for="pizza-sausage"><strong>Chicken & Beef Pepperoni.</strong></label>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings">
+                <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
               </div>
-
-              <div>
-                <input id="pizza-veggie" name="pizza-type" type="radio" value="veggie">
-                <label for="pizza-veggie"><strong>Roast Veg & Feta.</strong></label>
-              </div>
-              <div>
-                <input id="type-custom" name="pizza-type" type="radio" value="custom" checked>
-                <label for="type-custom"><strong>Chicken Macon BBQ.</strong></label>
-              </div>
-
-              <h2>CRUST</h2>
-                <!-- toppings -->
-  <div>
-    <input id="topping-cheese" name="cheese" type="checkbox" value="cheese" checked>
-    <label for="topping-cheese"><strong>Cripsy</strong></label>
-
-    <label class="visuallyhidden" for="topping-cheese-location">Cripsy location</label>
-    <select id="topping-cheese-location" name="cheese-location">
-      <option value="all" selected>All over</option>
-      <option value="left">Left side</option>
-      <option value="right">Right side</option>
-  </select>
-  </div>
-
-  <div>
-    <input id="topping-pepperoni" name="topping" type="checkbox" value="pepperoni">
-    <label for="topping-pepperoni"><strong>Stuffed</strong></label>
-    <!-- for a cleaner experience, we'd only add the <select> when the checkbox is checked -->
-  </div>
-
-  <div>
-    <input id="topping-beef" name="topping" type="checkbox" value="beef" checked>
-    <label for="topping-beef"><strong>Gluten-free</strong></label>
-
-    <label class="visuallyhidden" for="topping-beef-location">Gluten location</label>
-    <select id="topping-beef-location" name="beef-location">
-      <option value="all">All over</option>
-      <option value="left" selected>Left side</option>
-      <option value="right">Right side</option>
-    </select>
-  </div>
-
-             <h2>Make Your Order</h2>
-             <!-- size -->
-  <div>
-    <label for="pizza-size"><strong>Size</strong></label>
-    <select id="pizza-size" name="pizza-size">
-      <option value="s">Small</option>
-      <option value="m">Medium</option>
-      <option value="l" selected>Large</option>
-      <option value="xl">Extra large</option>
-    </select>
-  </div>
-
-  <div>
-
-    <div>
-      <label for="pizza-qty"><strong>Quantity</strong></label>
-      <select id="pizza-qty" name="pizza-qty">
-        <option value="1" selected>1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-      </select>
+              <br><br>
+            <button type="submit" class="btn btn-danger proceed">Proceed</button>
+            
+          </form>
+        </div>
+        <div class="col-sm-7">
+          <div id="info">
+            <p>Your order will be processed and delivered within one hour of placing.</p>          
+            <p id="regards">Regards, Management</p>
+          </div>
+          <div class="choice">
+            <h2>Your Order is:</h2>
+            <div id="your-orders">
+              <table class="table table-sm  pizzatable">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Size</th>
+                    <th scope="col">Crust</th>
+                    <th scope="col">Topping</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+                <tbody id="ordersmade">
+                  <tr>
+                    <td id="pizzaname"></td>
+                    <td id="pizzasize"></td>
+                    <td id="pizzacrust"></td>
+                    <td id="pizzatopping"></td>
+                    <td id="totals"></td>
+                  </tr>                  
+                </tbody>
+              </table>
+              <p id="pizzatotal"></p>
+              <p id="totalbill"></p> 
+              <p id="addedprice">Delivery will cost sh. 150</p>
+              <p id="finallmessage"></p>
+            </div>
+            <button class="btn btn-danger addPizza">Add Pizza</button>
+            <button class="btn btn-danger" id="checkout">Checkout</button>
+            <button class="btn btn-danger deliver">Home delivery?</button>
+          </div>
+          <div class="pick-up">
+              <form action="">
+                <div class="form-group">
+                  <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                  <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
+                  <input type="text" id="location" class="form-control mb-3" placeholder="Location for pick-up">
+                  <button class="btn btn-danger" id="final-order">Place Order</button>
+                </div>
+              </form>
+          </div>
+        </div>
     </div>
-    <div>
-      
-    <div class="textarea">
-      <label for="notes"><strong>Notes</strong></label>
-      <textarea id="notes"></textarea>
-    </div>
-  
-      <a href="#add-another"><span aria-hidden="true">+</span> Add another pizza</a>
-  
-    <a href="payment.html" class="button">Head to payment</a>
-  </form>
+  </div>
+</div>
 
-            </form>
-        </div>    
+
+<!-- cuisine section -->
+<div id="carousel1" class="carousel slide carousel-fade" data-ride="carousel" style="height:70vh">
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel1" data-slide-to="1"></li>
+    <li data-target="#carousel1" data-slide-to="2"></li>
+  </ol>
+  <!--/.Indicators-->
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <div class="view">
+        <img  src="./images/pxfuel.com.jpg" alt=""
+           alt="First slide">
+        <div class="mask rgba-black-light"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive" id ="pizza">The Works Pizza</h3>
+        <p>Lets work magic with tantalizong flavours.</p>
+      </div>
     </div>
-    
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img  src="./images/pizzeria7.jpg" alt="Magherita"
+          alt="Second slide">
+        <div class="mask rgba-black-strong"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive" id ="pizza">Magherita</h3>
+        <p>The flavors on this one will make you go gaga.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img  src="./images/pizzeria11.jpg" alt="Cheese pizza"
+           alt="Third slide">
+        <div class="mask rgba-black-slight"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive" id ="pizza">Cheese pizza</h3>
+        <p>Ever had of coagulation.This flavor will lighten up your mood.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img  src="./images/pizzeria12.jpg" alt="Meat pizza"
+          alt="Forth slide">
+        <div class="mask rgba-black-strong"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive" id ="pizza">Meat pizza</h3>
+        <p>They come in all sizes at our hub.You want it we deliver.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img  src="./images/pizza.jpg" alt="veggie pizza"
+          alt="Fifth slide">
+        <div class="mask rgba-black-strong"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive" id ="pizza">Veggie Pizza</h3>
+        <p>What a way to indulge in a healthy way.Try this and its bye bye to the gym.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img  src="./images/pizzeria14.jpg" alt="lastly"
+          alt="Sixth slide">
+        <div class="mask rgba-black-strong"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive" id ="pizza">Lastly</h3>
+        <p>And remember, you are in control of who you are</p>
+      </div>
+    </div>
+  </div>
+  <!--/.Slides-->
     <!-- footer  -->
     <div class="container">
             <div class="containers">
@@ -178,6 +275,7 @@
                 </div>
               </div>
       </div>
+
 
 </body>
 <script   src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>         

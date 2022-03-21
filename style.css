@@ -32,6 +32,15 @@
 }
 
 /* section1  */
+.headers{
+  font-size: 100px;
+  text-align: center;
+  color: rgb(73, 240, 81);
+}
+.one{
+  font-family: cursive;
+  font-weight: 600;
+}
 .section1{
     color: #fff;
     padding-top: 225px;
@@ -49,12 +58,15 @@
       padding-bottom: -50%;
   }
   .container .section2 .ak{
+    color: brown;
     margin-top: 1rem;
-    align-items: center;
+    text-align: center;
     font-size: 50px;
-    padding-left: 400px;
+    padding-left: 100px;
   }
   .akb{
+    color: red;
+    text-align: center;
     padding-left: 3rem;
   }
   .pp{
@@ -66,6 +78,9 @@
     font-size: 30px;
     color: #fff;
     padding-left: 200px;
+  }
+  .price{
+    color: antiquewhite;
   }
   
   
@@ -101,6 +116,9 @@
     height: 100vh;
     width: 100%;
   }
+  .hello{
+    text-align: center;
+  }
 
   /* footer  */
   .containers{
@@ -119,6 +137,96 @@
       padding-top: 170px;
       padding-left: 60px;
   }
+
+  /* cuisine-section */
+.carousel-item.active, .carousel-item .view {
+  height: 70vh!important;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  width:100%!important;
+  height: 100% !important;
+}
+
+.content h3 {
+font-size: 55px;
+}
+
+
+
+/* order section */
+.order{
+  background-attachment: fixed;
+  background-image: url("../images/pizzeria4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+.order-overlay{
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-bottom: 20px;
+  padding-left: 6%;
+}
+.order h2 {
+  text-align: center;
+}
+.choice{
+  display: none;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.deliver{
+  display: none;
+}
+.pick-up{
+  display: none;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+td,th{
+  font-size: 20px;
+  color: white;
+}
+.choice h2{
+  color:orange;
+  text-align: left;
+}
+#your-orders{
+  color: white;
+  font-size: 30px;
+}
+#addedprice{
+  display: none;
+}
+#finallmessage{
+  display: none;
+  padding-top: 10%;
+  padding-right: 10%;
+  padding-left: 10%;
+  font-size: 28px;
+}
+#regards{
+  text-align: center;
+  color: aliceblue;
+}
+#info{
+  padding-top: 5%;
+  font-size: 22px;
+  padding-right: 8%;
+  padding-left: 5%;
+  color: #ffa500;
+}
+button {
+  border-radius: 15px;
+  background-color: crimson;
+}
+
 
 
   /* form syling */
